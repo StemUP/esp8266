@@ -30,3 +30,15 @@ esptool.py --chip esp8266 --port COM6 --baud 460800 erase_flash
 esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x0000 .\micropython-0x0000-esp8266-20190125-v1.10.bin
 ```
 
+烧录 AP
+
+```
+esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x00 .\AP-0x00000.bin
+esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x02 .\AP-0x02000.bin
+```
+
+connect MyAP
+
+192.168.4.1
+
+no automesh
