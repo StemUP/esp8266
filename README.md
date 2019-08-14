@@ -1,4 +1,4 @@
-1. install choco
+安装 choco 包管理工具
 
 win+x 选择管理员权限的powershell，输入：
 
@@ -6,26 +6,27 @@ win+x 选择管理员权限的powershell，输入：
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-2. install python
+安装 python
 
 ```
 choco install python3
 ```
 
-3. install esptool
+安装 esp8266 烧录工具 esptool
 
 ```
 pip install esptool
 ```
 
-4. erase_flash
+擦除 esp8266
 
 ```
 esptool.py --chip esp8266 --port COM6 --baud 460800 erase_flash
 ```
 
-5. flash micropython
+烧录 micropython
 
 ```
-esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x0000 micropython-esp8266-20190529-0x0000-v1.11.bin
+esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x0000 .\micropython-0x0000-esp8266-20190125-v1.10.bin
 ```
+
