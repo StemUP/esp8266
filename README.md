@@ -27,5 +27,5 @@ esptool.py --chip esp8266 --port COM6 --baud 460800 erase_flash
 5. flash micropython
 
 ```
-esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x1000 micropython-esp8266-20190529-0x1000-v1.11.bin
+esptool.py --chip esp8266 --port COM6 --baud 460800 write_flash -z 0x0000 micropython-esp8266-20190529-0x0000-v1.11.bin
 ```
